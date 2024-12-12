@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Space Age';
+  src: url('./fonts/space age.ttf') format('truetype'); /* Укажите путь к вашему файлу */
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype'); /* Укажите путь к вашему файлу */
+}
+
+.header {
+  background-color: #735CFF; /* Синий фон */
+  color: white; /* Цвет текста */
+  font-family: 'Space Age', sans-serif; /* Шрифт Space Age */
+  font-size: 42px; /* Размер шрифта */
+  font-weight: 400; /* Насыщенность шрифта */  
+  height: 203px;
+  display: flex; /* Включаем Flexbox */
+  flex-direction: column; /* Выравнивание по вертикали */
+  justify-content: center; /* Центрируем содержимое по вертикали */
+  padding-left: 210px; /* Добавляем отступ слева (можно убрать или изменить) */
+  margin-top: 80px;
+}
+
+
+
+.subheader {
+  font-family: 'Poppins-Regular';
+  font-size: 14px; /* Размер шрифта */
+  font-weight: 400; /* Нормальный вес шрифта */
+  line-height: 12px; /* Высота строки */
+  text-align: left; /* Выравнивание текста влево */
+  color: #ffffff; /* Цвет текста для надписи */
+  margin-top: 10px;
+}

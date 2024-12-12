@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../pages/styles/fonts/Poppins-Regular.ttf') format('truetype'); /* Укажите путь к вашему файлу */
+}
+
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Отступы между карточками */
+    max-width: 1000px; /* Устанавливаем максимальную ширину для контейнера */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+    margin-top: 50px;
+    padding-bottom: 150px;
+  }
+  
+  .product-card {
+    position: relative; /* Устанавливаем позиционирование для дочерних элементов */
+    text-align: center;
+    width: 254px; /* Максимальная ширина карточки */
+    height: 373px;
+    box-sizing: border-box; /* Учитываем отступы и границы в ширину */
+    transition: background-color 0.3s; /* Плавный переход фона */
+  }
+  
+  .product-image-container {
+    position: relative;
+}
+
+.product-image {
+    width: 254px;
+    height: 298px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: filter 0.3s; 
+    border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #735CFFD9; /* Полупрозрачный цвет наложения */
+  opacity: 0; /* Изначально скрыто */
+  transition: opacity 0.3s; /* Плавный переход */
+  display: flex; /* Используем flexbox для центрирования */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  border-radius: 10px;
+}
+
+.product-image-container:hover .overlay {
+    opacity: 1; /* Показываем наложение при наведении */
+}
+
+.cart-icon {
+  width: 45px;
+  height: 34px;
+  color: white; /* Цвет иконки */
+  opacity: 0; /* Иконка скрыта по умолчанию */
+  transition: opacity 0.3s; /* Плавный переход */
+  width: auto; /* Автоматическая ширина */
+  height: auto; /* Автоматическая высота */
+}
+
+.product-image-container:hover .cart-icon {
+  opacity: 1; /* Иконка становится видимой при наведении */
+}
+
+  .product-title {
+    font-family: 'Poppins-regular';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 9.13px;
+  }
+  
+  .product-price {
+    font-family: 'Poppins-regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.03px;
+    text-align: center;
+  }
+
+  html, body {
+    height: 100%; /* Устанавливаем высоту на 100% */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы по умолчанию */
+  }
+
+  

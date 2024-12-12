@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../pages/styles/fonts/Poppins-Regular.ttf') format('truetype'); /* Укажите путь к вашему файлу */
+}
+
+@font-face {
+    font-family: 'ABeeZee-Regular';
+    src: url('../pages/styles/fonts/ABeeZee-Regular.ttf') format('truetype'); /* Укажите путь к вашему файлу */
+}
+
+.login-container {
+    position: relative; /* Это позволит позиционировать дочерние элементы относительно этого контейнера */
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    height: 100vh;
+}
+
+.login-form {
+    max-width: 800px; /* Максимальная ширина формы */
+    margin: 0; /* Убираем отступы сверху и снизу */
+    padding: 20px; /* Отступы внутри формы */
+    margin-left: 210px; /* Отступ слева для формы */
+    margin-top: 155px; /* Убираем отрицательный отступ сверху */
+    margin-right: 60px; /* Отступ справа для увеличения расстояния до изображения */
+}
+
+input {
+    width: 400px; /* Поля ввода занимают всю ширину формы */
+    padding: 15px; /* Отступы внутри полей ввода */
+    margin: 8px 0; /* Отступы между полями ввода */
+    border: 1px solid #ccc; /* Рамка вокруг полей ввода */
+    border-radius: 4px; /* Скругление углов полей ввода */
+    font-size: 16px; /* Размер шрифта */
+}
+
+button {
+    width: 200px; /* Кнопка занимает всю ширину формы */
+    padding: 10px; /* Отступы внутри кнопки */
+    height: 55px;
+    margin-top: 10px; /* Отступ сверху кнопки */
+    background-color: #735CFF; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку у кнопки */
+    border-radius: 4px; /* Скругление углов кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    font-family: 'Poppins-Regular'; /* Шрифт кнопки */
+}
+
+button:hover {
+    background-color: #6552e0; /* Темнее цвет фона при наведении */
+}
+
+
+/* Сообщение об ошибке */
+.error-message {
+    color: red; /* Цвет текста ошибок */
+    font-size: 14px; /* Размер шрифта ошибок */
+}
+
+/* Контейнер для изображения */
+.image-container {
+    display: flex;
+    justify-content: flex-end; /* Прикрепляем изображение к правой части контейнера */
+    margin: 0; /* Убираем отступы */
+}
+
+
+/* Изображение в контейнере */
+.image-container img {
+    height: 100%; /* Высота изображения на 100% высоты родительского контейнера */
+    width: auto; /* Ширина автоматически подстраивается для сохранения пропорций */
+    object-fit: cover; /* Изображение будет обрезано, чтобы заполнить контейнер */
+}
+
+/* Параграфы */
+p {
+    font-family: 'Poppins-Regular'; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #939393;
+}
+
+/* Плейсхолдеры в полях ввода */
+input::placeholder {
+    font-family: 'Poppins-Regular';
+}
+
+/* Заголовок первого уровня */
+h1 {
+    font-family: 'ABeeZee-Regular'; 
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+}
+
+.overlay-image {
+    display: block;
+    position: absolute; /* Позиционируем изображение относительно родительского контейнера */
+    top: 20%; /* Настройте по вашему усмотрению */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -20%); /* Центрируем по горизонтали и корректируем по вертикали */
+    width: 50%; /* Уменьшаем ширину изображения до 50% */
+    max-width: 114px; /* Устанавливаем максимальную ширину изображения */
+    z-index: 10; /* Убедитесь, что изображение выше других элементов */
+}
+
+.second-overlay-image {
+    display: block;
+    position: absolute; /* Позиционируем второе изображение относительно родительского контейнера */
+    top: 30%; /* Настройте по вашему усмотрению */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Центрируем по обеим осям */
+    max-width: 60px; /* Устанавливаем максимальную ширину изображения */
+    z-index: 15; /* Убедитесь, что изображение выше других элементов */
+}
